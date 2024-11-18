@@ -21,12 +21,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Optional: Add navigation buttons for manual control
     const nextButton = document.createElement('button');
     nextButton.textContent = 'Next';
-    nextButton.classList.add('.nav-button');
+    nextButton.classList.add('nav-button');
     document.querySelector('.testimonials').appendChild(nextButton);
 
     const prevButton = document.createElement('button');
     prevButton.textContent = 'Previous';
-    prevButton.classList.add('.nav-button');
+    prevButton.classList.add('nav-button');
     document.querySelector('.testimonials').appendChild(prevButton);
 
     // Event listeners for navigation buttons

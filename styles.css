@@ -1,15 +1,15 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 .hero {
-    background-image: none;
+    background-image: url('spa-background.jpg');
     background-size: cover;
     color: white;
     text-align: center;
-    padding: 100px 20px;    
+    padding: 100px 20px;
 }
 
 .hero-content h1 {
@@ -20,7 +20,7 @@ body {
     background-color: #ff7f50;
     color: white;
     padding: 10px 20px;
-    /* text-decoration: none; */
+    text-decoration: none;
     border-radius: 5px;
     margin: 10px;
 }
@@ -30,27 +30,27 @@ body {
     text-align: center;
 }
 
-.services-cards {
+.service-cards {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-.services-card {
+.service-card {
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 20px;
     width: 250px;
 }
 
-.services-card img{
+.service-card img {
     width: 100%;
     border-radius: 10px;
 }
 
-.testimonials{
+.testimonials {
     background-color: #f9f9f9;
-    padding: 50px;
+    padding: 50px 20px;
     text-align: center;
 }
 
@@ -59,3 +59,6 @@ body {
     justify-content: center;
     gap: 20px;
 }
+
+
+
