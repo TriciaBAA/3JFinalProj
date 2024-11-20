@@ -87,9 +87,9 @@ body {
     background-color: #2f5e3a;
 }
 
-/* for sign up  */
+/* for sign up and sign in */
 
-.signup-container {
+.signup-container, .signin-container {
     display: flexbox;
     text-align: center;
     margin: 25px 600px;
