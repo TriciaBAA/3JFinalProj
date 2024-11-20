@@ -87,3 +87,43 @@ body {
     background-color: #2f5e3a;
 }
 
+/* for sign up  */
+
+.signup-container {
+    display: flexbox;
+    text-align: center;
+    margin: 25px 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8; 
+    /* Soft background color */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    display: flex;
+    width: 96%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Soft font */
+}
+
+button {
+    background-color: #87CEFA; /* Soft blue */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Soft font */
+}
+
+#error-message {
+    color: #8B0000; /* Soft red */
+    margin-top: 10px;
+    font-weight: bold;
+}
