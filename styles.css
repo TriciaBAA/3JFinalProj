@@ -127,3 +127,33 @@ button {
     margin-top: 10px;
     font-weight: bold;
 }
+
+/* Booking Page Styles */
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.step {
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+button {
+    background-color: #4CAF50; /* Green for booking buttons */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}

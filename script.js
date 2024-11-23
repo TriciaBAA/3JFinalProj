@@ -41,3 +41,45 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+function nextStep(currentStep) {
+    const steps = document.querySelectorAll('.step');
+    steps[currentStep - 1].style.display = 'none';
+    steps[currentStep].style.display = 'block';
+
+    if (currentStep === 1) {
+        const service = document.getElementById('service').value;
+        const price = service === 'massage' ? 100 : service === 'facial' ? 80 : 50;
+        document.getElementById('serviceSummary').innerText = `Selected Service: ${service} - $${price}`;
+    } else if (currentStep === 2) {
+        updateAppointmentSummary();
+    }
+}
+
+function prevStep(currentStep) {
+    const steps = document.querySelectorAll('.step');
+    steps[currentStep].style.display = 'none';
+    steps[currentStep - 1].style.display = 'block';
+}
+
+function updateTimeSlots() {
+    const timeSelect = document.getElementById('time');
+    timeSelect.innerHTML = ''; // Clear existing options
+    const date = document.getElementById('date').value;
+
+    // Example: Populate time slots based on selected date
+    if (date) {
+        const availableTimes = ['10:00 AM', '11:00 AM', '1:00 PM', '2:00 PM']; // Example times
+        availableTimes.forEach(time => {
+            const option = document.createElement('option');
+            option.value = time;
+            option.textContent = time;
+            timeSelect.appendChild(option);
+        });
+    }
+}
+
+function updateAppointmentSummary() {
+    const service = document.getElementById('service').value;
+    const date = document.getElementById('date').value;
+    const time = document.getElementById('time').value;
+    const therapist = document.getElementById}
