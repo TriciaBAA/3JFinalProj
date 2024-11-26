@@ -1,159 +1,275 @@
+/* Styling for General Body  */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #ccc6ba;
+    color: #14342f;
+    line-height: 1.6;
+}
+
+/* Styling for main headings */
+h1 {
+    color: #fff
+}
+
+h2,
+h3 {
+    color: #14342f;
+    margin: 0;
+}
+
+p {
+    color: #14342f;
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #997c54;
+}
+
+a:hover {
+    color: #14342f;
 }
 
 .hero {
-    background-image: url('spa-background.jpg');
+    background-image: url('/Users/chloeo.refuerzo/3JFinalProject/images/spa-background.jpg');
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: white;
-    text-align: center;
-    padding: 100px 20px;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 52, 47, 0.6);
+    z-index: 1;
 }
 
 .hero-content h1 {
-    font-size: 2.5em;
+    font-size: 3.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
 }
 
 .cta-button {
-    background-color: #7cae7d;;
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 10px 5px;
+    background-color: #997c54;
     color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 10px;
+    border-radius: 30px;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    background-color: #14342f;
+    color: #fff;
 }
 
 .services {
-    padding: 50px 20px;
+    padding: 60px 20px;
     text-align: center;
-    background-color: #b9d7b3;;
+    background-color: #f7f3ed;
+}
+
+.services h2 {
+    font-size: 2.8em;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #14342f;
 }
 
 .service-cards {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .service-card {
-    border: 1px solid #2f5e3a;
-    border-radius: 10px;
+    border: 1px solid #14342f;
+    border-radius: 15px;
     padding: 20px;
-    width: 250px;
+    width: 280px;
     background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .service-card img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #14342f;
+}
+
+.price {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #997c54;
 }
 
 .testimonials {
-    background-color: #f9f9f9;
-    padding: 50px 20px;
+    padding: 80px 20px;
     text-align: center;
+    background-color: #14342f;
+    color: white;
+}
+
+.testimonials h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: white;
 }
 
 .testimonial-slider {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .testimonial-card {
-    border: 1px solid #2f5e3a;
-    border-radius: 10px;
-    padding: 20px;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 30px;
     background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+    color: #14342f;
+}
+
+.testimonial-card p {
+    margin-bottom: 10px;
+    font-style: italic;
+    color: #14342f;
 }
 
 .cta {
-    padding: 50px 20px;
+    padding: 80px 20px;
     text-align: center;
-    background-color: #7cae7d;
-}
-
-.cta h2 {
+    background-color: #997c54;
     color: white;
 }
 
+.cta h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #f8f8f8;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
 .cta-button {
-    border: 1px solid #2f5e3a;  
+    padding: 15px 40px;
+    font-size: 1.3em;
+    background-color: #14342f;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
 }
 
 .cta-button:hover {
-    background-color: #2f5e3a;
+    background-color: white;
+    color: #14342f;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* for sign up and sign in */
 
-.signup-container, .signin-container {
-    display: flexbox;
-    text-align: center;
-    margin: 25px 600px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f8f8f8; 
-    /* Soft background color */
+.signup-container,
+.signin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px auto;
+    padding: 30px;
+    border: 1px solid #997c54;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    max-width: 500px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.signup-container h2,
+.signin-container h2 {
+    margin-bottom: 20px;
+    color: #14342f;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-    display: flex;
     width: 96%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #14342f;
     border-radius: 5px;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Soft font */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1em;
 }
 
 button {
-    background-color: #87CEFA; /* Soft blue */
+    background-color: #997c54;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Soft font */
-}
-
-#error-message {
-    color: #8B0000; /* Soft red */
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-/* Booking Page Styles */
-.container {
-    max-width: 600px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.step {
-    margin-bottom: 20px;
-}
-
-h1, h2 {
-    color: #333;
-}
-
-button {
-    background-color: #4CAF50; /* Green for booking buttons */
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease-in-out;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #14342f;
+}
+
+#error-message {
+    color: #8B0000;
+    margin-top: 10px;
+    font-weight: bold;
 }
