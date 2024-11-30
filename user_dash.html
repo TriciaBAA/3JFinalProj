@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div   
+ class="dashboard-container">
+        <h2>User Dashboard</h2>
+        <h3>Upcoming Appointments</h3>
+        <ul id="upcoming-appointments"></ul>
+
+        <h3>Past Appointments</h3>
+        <ul id="past-appointments"></ul>
+
+        <h3>Account Settings</h3>
+        <div class="account-settings">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="Your Name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="your@email.com">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" value="123-456-7890">
+
+            <button type="button" id="update-profile">Update Profile</button>
+
+            <label for="old-password">Old Password:</label>
+            <input type="password" id="old-password" name="old-password">
+
+            <label for="new-password">New Password:</label>
+            <input type="password" id="new-password" name="new-password">   
+
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password">
+
+            <button type="button"   
+ id="change-password">Change Password</button>
+        </div>
+
+        <h3>Promotions and Rewards</h3>
+        <p>You currently have no active promotions or rewards.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
