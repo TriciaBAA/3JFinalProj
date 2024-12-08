@@ -34,7 +34,7 @@ a:hover {
 }
 
 .hero {
-    background-image: url('/Users/chloeo.refuerzo/3JFinalProject/images/spa-background.jpg');
+    background-image: url('/images/spa-background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -147,6 +147,10 @@ a:hover {
     padding: 80px 20px;
     text-align: center;
     background-color: #14342f;
+    background-image: url("/images/testimonials.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     color: white;
 }
 
@@ -322,3 +326,23 @@ button:hover {
     cursor:   
    pointer;
   }
+
+  /**booking styles**/
+  .container {
+    width: 90%;
+    max-width:100%;
+    padding: 75px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    justify-content: center;
+}
+  select, input[type="date"], input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
