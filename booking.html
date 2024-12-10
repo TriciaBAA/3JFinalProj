@@ -40,6 +40,10 @@
                 <label for="time">Select Time:</label>
                 <select id="time" name="time">
                     <option value="">-- Select Time --</option>
+                    <option value="10">10:00 AM</option>
+                    <option value="11">11:00 AM</option>
+                    <option value="1">1:00 PM</option>
+                    <option value="2">2:00 PM</option>
                 </select>
 
                 <button type="button" onclick="prevStep(1)">Back</button>
@@ -61,15 +65,16 @@
                 <input type="text" id="promoCode" name="promoCode">
 
                 <button type="button" onclick="prevStep(2)">Back</button>
-                <button type="button" onclick="confirmBooking()">Confirm Appointment</button>
+                <button type="submit">Confirm Appointment</button>
             </div>
-            <!-- Call to Action -->
-            <section class="cta">
-
-                <a href="index.html" class="cta-button">Home</a>
-                <a href="#" class="cta-button">Check Your Account</a>
-            </section>
-            <script src="script.js"></script>
+        </form>
+        <!-- Call to Action -->
+        <section class="cta">
+            <a href="index.html" class="cta-button">Home</a>
+            <a href="#" class="cta-button">Check Your Account</a>
+        </section>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
