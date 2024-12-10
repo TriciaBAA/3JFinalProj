@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spa Booking Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="container">
         <h1>Spa Booking</h1>
-        <form id="bookingForm">
+        <form id="bookingForm" action="booking_appointment.php" method="POST">
             <div class="step" id="step1">
                 <h2>Step 1: Select Service and Therapist</h2>
                 <label for="service">Select Service:</label>
@@ -18,55 +20,56 @@
                     <option value="facial">Facial - $80</option>
                     <option value="manicure">Manicure - $50</option>
                 </select>
-            
+
                 <label for="therapist">Select Therapist:</label>
                 <select id="therapist" name="therapist">
                     <option value="therapist1">Therapist 1</option>
                     <option value="therapist2">Therapist 2</option>
                     <option value="therapist3">Therapist 3</option>
                 </select>
-            
+
                 <div id="serviceSummary"></div>
                 <button type="button" onclick="nextStep(1)">Next</button>
             </div>
-            
+
             <div class="step" id="step2" style="display:none;">
                 <h2>Step 2: Choose Date and Time</h2>
                 <label for="date">Select Date:</label>
                 <input type="date" id="date" name="date" onchange="updateTimeSlots()">
-            
+
                 <label for="time">Select Time:</label>
                 <select id="time" name="time">
                     <option value="">-- Select Time --</option>
                 </select>
-            
+
                 <button type="button" onclick="prevStep(1)">Back</button>
                 <button type="button" onclick="nextStep(2)">Next</button>
             </div>
-            
+
             <div class="step" id="step3" style="display:none;">
                 <h2>Step 3: Confirmation and Payment</h2>
                 <div id="appointmentSummary"></div>
-            
+
                 <label for="payment">Select Payment Method:</label>
                 <select id="payment" name="payment">
                     <option value="cash">Cash</option>
                     <option value="creditCard">Credit Card</option>
                     <option value="paypal">PayPal</option>
                 </select>
-            
+
                 <label for="promoCode">Promo Code:</label>
                 <input type="text" id="promoCode" name="promoCode">
-            
+
                 <button type="button" onclick="prevStep(2)">Back</button>
                 <button type="button" onclick="confirmBooking()">Confirm Appointment</button>
             </div>
-    <!-- Call to Action -->
-    <section class="cta">
-        
-        <a href="index.html" class="cta-button">Home</a>
-        <a href="#" class="cta-button">Check Your Account</a>
-    </section>
-    <script src="script.js"></script>
+            <!-- Call to Action -->
+            <section class="cta">
+
+                <a href="index.html" class="cta-button">Home</a>
+                <a href="#" class="cta-button">Check Your Account</a>
+            </section>
+            <script src="script.js"></script>
 </body>
+
 </html>
