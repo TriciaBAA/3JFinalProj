@@ -6,11 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spa Booking Page</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+    .navbar {
+        background-color: #14342f;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 10;
+    }
+
+    .navbar a {
+        flex: 1;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+    }
+
+    .navbar a:hover {
+        background-color: #997c54;
+        color: black;
+    }
+
+    .content {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        z-index: 1;
+        text-align: center;
+        padding: 20px;
+    }
+    </style>
 </head>
 
 <body>
+    <div class="background"></div>
+
+    <div class="navbar">
+        <a href="dashboard.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="booking.html">Appointment</a>
+        <a href="reviews.html">Reviews</a>
+    </div>
+    <br>
+    <br>
+
+    <center><h1>Appointment Booking</h1></center>
     <div class="container">
-        <h1>Spa Booking</h1>
+ 
         <form id="bookingForm" action="booking_appointment.php" method="POST">
             <div class="step" id="step1">
                 <h2>Step 1: Select Service and Therapist</h2>
@@ -70,8 +125,7 @@
         </form>
         <!-- Call to Action -->
         <section class="cta">
-            <a href="index.html" class="cta-button">Home</a>
-            <a href="#" class="cta-button">Check Your Account</a>
+            <a href="dashboard.html" class="cta-button">Home</a>
         </section>
     </div>
     <script src="script.js"></script>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spa Website</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .navbar {
+            background-color: #14342f;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+
+        .navbar a {
+            flex: 1;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #997c54;
+            color: black;
+        }
+
+        .content {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            z-index: 1;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .services {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .services h1 {
+            font-size: 3em;
+            color: black; 
+            margin-bottom: 20px;
+        }
+
+        .service-cards {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .service-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+        }
+
+        .cta-button {
+            background-color: #14342f;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .cta-button:hover {
+            background-color: #997c54;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background"></div>
+
+    <div class="navbar">
+        <a href="dashboard.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="booking.html">Appointment</a>
+        <a href="reviews.html">Reviews</a>
+    </div>
+    <br>
+    <br>
+
+
+    <section id="services" class="services">
+        <h1>Our Popular Services</h1>
+        <br>
+        <br>
+
+        <div class="service-cards">
+            <div class="service-card">
+                <h3>Massage Therapy</h3>
+                <p>Relax and rejuvenate with our expert massage therapy.</p>
+                <p>Price: ₱</p>
+                <a href="booking.html" class="cta-button">Book Now</a>
+            </div>
+            <div class="service-card">
+                <h3>Facial Treatment</h3>
+                <p>Refresh your skin with our luxurious facial treatments.</p>
+                <p>Price: ₱</p>
+                <a href="booking.html" class="cta-button">Book Now</a>
+            </div>
+            <div class="service-card">
+                <h3>Manicure</h3>
+                <p>Pamper your hands with our professional manicure services.</p>
+                <p>Price: ₱</p> 
+                <a href="booking.html" class="cta-button">Book Now</a>
+            </div>
+        </div>
+    </section>
+ 
+</body>
+</html>

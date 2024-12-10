@@ -34,7 +34,7 @@ a:hover {
 }
 
 .hero {
-    background-image: url(/images/spa-background.jpg);
+    background-image: url('https://images.pexels.com/photos/5979561/pexels-photo-5979561.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -147,7 +147,6 @@ a:hover {
     padding: 80px 20px;
     text-align: center;
     background-color: #14342f;
-    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/030/761/347/small_2x/soothing-escape-brunette-woman-or-girl-with-long-hair-in-jacuzzi-outdoor-on-the-background-of-landscape-with-forest-and-mountains-photo.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -345,4 +344,6 @@ button:hover {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
+
   

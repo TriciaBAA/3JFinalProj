@@ -7,6 +7,47 @@
     <title>Booking Confirmation</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+    .navbar {
+        background-color: #14342f;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 10;
+    }
+
+    .navbar a {
+        flex: 1;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+    }
+
+    .navbar a:hover {
+        background-color: #997c54;
+        color: black;
+    }
+
+    .content {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        z-index: 1;
+        text-align: center;
+        padding: 20px;
+    }
         table {
             width: 50%;
             margin: 50px auto;
@@ -33,7 +74,20 @@
 </head>
 
 <body>
-    <center><h1>Appointment Confirmation</h1></center>
+
+    <div class="background"></div>
+
+    <div class="navbar">
+        <a href="dashboard.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="booking.html">Appointment</a>
+        <a href="reviews.html">Reviews</a>
+    </div>
+
+    <br>
+    <br>
+
+    <center><h1>Booking Confirmation</h1></center>
     <div class="container">
         
 
@@ -79,7 +133,7 @@
         }
         ?>
 
-        <a href="index.html" class="cta-button">Home</a>
+        <a href="dashboard.html" class="cta-button">Home</a>
         <a href="booking.html" class="cta-button">Edit Booking</a>
     </div>
 </body>
